@@ -28,8 +28,8 @@
             <td>{{product.categoryId}}</td>
             <td>{{product.productName |uppercase}}</td>
             <td>{{product.unitsInStock}}</td>
-            <td>{{product.unitPrice | currency}}</td>
-            <td>{{product.unitPrice | vatAdded:18 | currency}}</td>
+            <td>{{product.unitPrice | currency:"TL"}}</td>
+            <td>{{product.unitPrice | vatAdded:18 | currency:"TL"}}</td>
             <td><button (click)="addToCart(product)" type="button" class="btn btn-success">Sepete Ekle</button></td>
 
         </tr>
